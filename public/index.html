@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake iPad</title>
+    <style type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      #ipad {
+        background-image: url(https://dl.dropboxusercontent.com/u/1599823/iPad-landscape.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 20px auto;
+        width: 1246px;
+        height: 878px;
+        position: relative;
+      }
+
+      iframe {
+        border: none;
+        width: 1024px;
+        height: 768px;
+        overflow: hidden;
+        position: absolute;
+        top: 55px;
+        left: 112px;
+      }
+    </style>
+    <script type="text/javascript">
+      window.goToHash = function() {
+        if (location.hash != "") {
+          document.getElementById('app').src = "http://localhost:4400/" + location.hash
+        }
+      };
+      window.addEventListener('hashchange', goToHash);
+    </script>
+  </head>
+  <body onload="goToHash()">
+    <div id="ipad">
+      <iframe id="app" src="http://localhost:4400/"></iframe>
+    </div>
+  </body>
+</html>
