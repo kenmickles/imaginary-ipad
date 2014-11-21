@@ -1,4 +1,4 @@
 imaginary-ipad
 ==============
 
-A Sinatra app that traps unassuming websites inside its iPad.
+A Sinatra app that catches innocent websites in its iPad-shaped death bag.
