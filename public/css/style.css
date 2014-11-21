@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#ipad {
+  background-image: url(/images/iPad-landscape.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 20px auto;
+  width: 1246px;
+  height: 878px;
+  position: relative;
+}
+
+iframe {
+  border: none;
+  width: 1024px;
+  height: 768px;
+  /*overflow: hidden;*/
+  position: absolute;
+  top: 55px;
+  left: 112px;
+}
